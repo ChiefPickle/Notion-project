@@ -1,0 +1,21 @@
+model:
+  provider: openrouter
+  default: anthropic/claude-sonnet-4
+
+kanban:
+  auto_decompose: true
+  orchestrator_profile: neo
+  default_assignee: cipher
+  dispatch_in_gateway: true
+  dispatch_interval_seconds: 60
+  max_in_progress: 3
+  max_in_progress_per_profile: 1
+
+notification_sources:
+  - '*'
+
+toolsets:
+  - kanban
+  - memory
+  - messaging
+  - clarify

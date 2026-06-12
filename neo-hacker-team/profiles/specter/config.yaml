@@ -1,0 +1,9 @@
+model:
+  provider: openrouter
+  default: anthropic/claude-sonnet-4
+
+toolsets:
+  - terminal
+  - file
+  - code_execution
+  - memory
